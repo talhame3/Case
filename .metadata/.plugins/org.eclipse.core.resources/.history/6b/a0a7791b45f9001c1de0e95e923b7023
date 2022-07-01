@@ -1,0 +1,15 @@
+package com.hexaware.spring.service;
+
+import java.util.stream.Stream;
+
+import org.springframework.stereotype.Service;
+
+import com.hexaware.spring.model.FileDB;
+
+@Service
+public interface FileStorageService {
+	
+	public FileDB store();
+	public FileDB getFile();
+	public Stream<FileDB> getAllFiles();
+}

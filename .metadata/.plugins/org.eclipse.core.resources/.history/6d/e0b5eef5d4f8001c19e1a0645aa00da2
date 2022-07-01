@@ -1,0 +1,20 @@
+package com.hexaware.spring.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.hexaware.spring.model.Claim;
+import com.hexaware.spring.repository.ClaimRepository;
+
+public class ClaimServiceImpl implements ClaimService {
+
+	@Autowired
+	private ClaimRepository claimRepository;
+	
+	@Override
+	public List<Claim> getAllClaim() {
+		return claimRepository.findAll();
+	}
+
+}

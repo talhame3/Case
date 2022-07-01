@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insurance Management System</title>
+</head>
+<body>
+
+<div align="center">
+	<h1>Claim List</h1>
+	<table>
+		<thead>
+			<tr>
+			
+				<th>Claim First Name</th>
+				<th>Claim Last Name</th>
+				<th>Claim Email</th>
+				<th>Claim Title</th>
+				<th>Claim Description</th>
+				<th>Claim Status</th>
+			
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="claim : ${listClaim}">
+					<td th:text="${claim.firstName}"></td>
+					<td th:text="${claim.lastName}"></td>
+					<td th:text="${claim.email}"></td>
+					<td th:text="${claim.tile}"></td>
+					<td th:text="${claim.description}"></td>
+					<td th:text="${claim.status}"></td>
+				</tr> 
+		</tbody>
+	</table>
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

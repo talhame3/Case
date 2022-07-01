@@ -1,0 +1,5 @@
+package com.hexaware.spring.exception;
+
+public class FileUploadExceptionAdvice {
+
+}
